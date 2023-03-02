@@ -1,0 +1,50 @@
+session_id: unique id for this session, ex: fe114b71-83f1-4aa3-a39b-844c4d6a5410
+platform: android or ios
+open_at: time when session is opened, ex: 2020-02-10 23:22:25.407000
+user_id: unique id for each user, ex: 37ef4639-9537-4830-902a-457ef1e45e70
+country: 2 character country code, ex: US, GB, MX
+ab_cohort_id: the id for each ab test cohort, there are thirteen of them. All of them are a three-digit integer. 
+segment_id: three unique values. there are three of them. Three of them are all three-digit integer. 
+session_length: the time length (seconds) of opened session, ex: 0, 2654
+session_number_: user lifetime session count (for each user_id)
+publisher_revenue: total ad revenue (dollars) generated during the session, ex: 0.152518, 0.000010
+fs_shown: number of full screen ads are shown (automatic), format: integers
+rv_shown: number of rewarded video ads are shown (of user's choice), format: integers
+game_count: the number of games that the user played in this session, format: integers
+offline_game_count: the number of games that the user played in this session but offline, format: integers
+acquired_at: the time that the user signed up for the game account, time format, ex: 2020-02-08 21:47:28.348000 
+segment_name: either android_new_users or ios_new_users
+ab_name: either ab-test_android or ab-test_ios
+ab_cohort_name: 6 unique values, each represents a different ad frequency. 
+
+With this business case, we will evaluate your capacity to extract the most impactful insights from a dataset in a limited amount of time, so don’t hesitate to prioritize your analyses and synthesize your restitution.
+
+Your deliverable should include:
+A business-oriented  presentation (PPT / PDF /  Dashboard) to support your case
+A technical draft (SQL queries / Python Notebook / Excel Sheets) to show your calculations, explorations and reasoning while working on this case.
+
+The attached dataset (Voodoo_Test_Business_Case.csv) contains user data from a Voodoo game (Ball Mayhem). Data has been filtered on sessions belonging to an AB test experiment, which objective was to find the right ad frequency; various frequencies (from xxLow to xxHigh) have been tested. 
+
+Briefly describe the data and the AB test context. 
+The data consists of 18 columns and each entry belongs to one session of a user. Here is a brief explanation of each columns. 
+The goal of this AB test is to find the right ad frequency from the 6 different frequencies we have tested. We want to know which one brings the most revenue from the ad as well as a longer session time before the user gets annoyed by the ads.  
+
+What is the success metric of this test?
+The success metric of this test is a higher publisher revenue as well as a longer session length
+
+Is there a clear winner to this AB test? Why? 
+
+What would be your business recommendation(s) to the game manager? 
+
+Do you have any suggestions for future experiments?
+
+
+Please document your answers with clear analyses and data visualizations.
+
+Glossary: 
+
+FS: Full-Screen Ad format. Displayed between games / levels (AKA interstitial)
+RV: Rewarded Video Ad format (the players choose to watch the ad)
+Ad frequency: frequency of interstitial ads during the session
+Publisher revenue: total ad revenue generated during the session
+Session number: user lifetime session count
