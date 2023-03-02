@@ -9,7 +9,7 @@ analysis = st.container()
 dashboard = st.container()
 
 
-#Caching the model for faster loading
+#Caching the data for faster loading
 @st.cache_data
 def get_data():
     df = pd.read_csv('Voodoo_Test_Business_Case.csv', sep=';')
